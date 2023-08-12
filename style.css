@@ -1,30 +1,50 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: cursive;
   box-sizing: border-box;
 }
 .container {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #2b313d, #4e085f);
-  /* background-color: rgb(196, 167, 167); */
+  /* background: linear-gradient(135deg, #2b313d, #4e085f); */
+  background-color: #eee3da;
+  /* background-color: #f0ecec; */
+  background-image: linear-gradient(
+      45deg,
+      #efefef 25%,
+      rgba(239, 239, 239, 0) 25%,
+      rgba(239, 239, 239, 0) 75%,
+      #efefef 75%,
+      #efefef
+    ),
+    linear-gradient(
+      45deg,
+      #efefef 25%,
+      rgba(239, 239, 239, 0) 25%,
+      rgba(239, 239, 239, 0) 75%,
+      #efefef 75%,
+      #efefef
+    );
   padding: 10px;
 }
 .todo-app {
   width: 100%;
   max-width: 500px;
   background: #fff;
-  margin: 100px auto 20px;
-  padding: 40px 30px 70px;
+  margin: 80px auto 20px;
+  padding: 40px 30px 30px;
   border-radius: 15px;
-  margin-bottom: 15rem;
+  /* margin-bottom: 14rem;
+  margin-right: 30rem; */
 }
 .todo-app h2 {
-  color: #050505;
+  color: #866565;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  font-family: cursive;
 }
 .list-icon {
   width: 30px;
@@ -69,11 +89,11 @@ input {
 ul li {
   list-style: none;
   font-size: 18px;
-  padding: 12px 8px 12px 50px;
+  padding: 17px 8px 12px 50px;
   user-select: none;
   cursor: pointer;
   position: relative;
-  color: #13161d;
+  color: #7a7f8a;
   font-weight: lighter;
 }
 ul li::before {
@@ -85,7 +105,7 @@ ul li::before {
   background-image: url(images/circle.png);
   background-size: cover;
   background-position: center;
-  top: 13px;
+  top: 17px;
   left: 8px;
 }
 ul li.checked {
@@ -98,7 +118,7 @@ ul li.checked::before {
 ul li span {
   position: absolute;
   right: 0;
-  top: 5px;
+  top: 8px;
   width: 40px;
   height: 40px;
   font-size: 22px;
@@ -109,4 +129,29 @@ ul li span {
 }
 ul li span:hover {
   background: #edeef0;
+}
+.dino-pic {
+  width: 9rem;
+  position: relative;
+  left: 20rem;
+  top: 0.5rem;
+}
+.search-bar {
+  display: flex;
+  /* background-color: rgb(187, 182, 182); */
+  align-items: center;
+  width: 14rem;
+  height: 2rem;
+  justify-content: space-around;
+  margin-left: 13.5rem;
+  margin-top: -11px;
+  border-radius: 2rem;
+  border-bottom: 0.1rem solid rgb(175, 175, 175);
+}
+.search-bar input {
+  border: none;
+}
+.search-color {
+  color: grey;
+  /* font-family: "Poppins", sans-serif; */
 }
