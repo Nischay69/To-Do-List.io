@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="style.css" />
-    <title>To-Do List.io</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="todo-app">
-        <h2>DAILIST <img src="images/icon.png" alt="" class="list-icon" /></h2>
-        <div class="row">
-          <input type="text" id="input-box" placeholder="Type your List" />
-          <button class="list-add-button">ADD</button>
-        </div>
-        <!-- <div class="search-bar">
-          <form>
-            <input type="text" name="" id="search-input" placeholder="Search" onkeyup="search()">
-            <i class="fas fa-search search-color"></i>
-          </form> 
-        </div> -->
-          <ul id="list-container">
-            <!-- <li class="checked">Task 1</li>
-          <li>Task 2</li>
-          <li>Task 3</li> -->
-          </ul>
-          <img src="images/dino.jpg" alt="" class="dino-pic" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>To-Do | Nischay</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <h2>DAILIST
+        <img src="images/icon.png" alt="" class="list-icon" />
+      </h2>
+
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your task" />
+        <button class="list-add-button">ADD</button>
+      </div>
+
+      <ul id="list-container"></ul>
+
+      <img src="images/dino.jpg" alt="" class="dino-pic" />
     </div>
+
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

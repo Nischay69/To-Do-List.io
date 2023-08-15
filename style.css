@@ -1,34 +1,31 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: "Poppins", sans-serif; */
   font-family: cursive;
   box-sizing: border-box;
 }
+
 .container {
   width: 100%;
   min-height: 100vh;
   /* background: linear-gradient(135deg, #2b313d, #4e085f); */
   background-color: #eee3da;
   /* background-color: #f0ecec; */
-  background-image: linear-gradient(
-      45deg,
+  background-image: linear-gradient(45deg,
       #efefef 25%,
       rgba(239, 239, 239, 0) 25%,
       rgba(239, 239, 239, 0) 75%,
       #efefef 75%,
-      #efefef
-    ),
-    linear-gradient(
-      45deg,
+      #efefef),
+    linear-gradient(45deg,
       #efefef 25%,
       rgba(239, 239, 239, 0) 25%,
       rgba(239, 239, 239, 0) 75%,
       #efefef 75%,
-      #efefef
-    );
+      #efefef);
   padding: 10px;
 }
+
 .todo-app {
   width: 100%;
   max-width: 500px;
@@ -36,9 +33,8 @@
   margin: 80px auto 20px;
   padding: 40px 30px 30px;
   border-radius: 15px;
-  /* margin-bottom: 14rem;
-  margin-right: 30rem; */
 }
+
 .todo-app h2 {
   color: #866565;
   display: flex;
@@ -46,10 +42,12 @@
   margin-bottom: 20px;
   font-family: cursive;
 }
+
 .list-icon {
   width: 30px;
   margin-left: 10px;
 }
+
 .row {
   display: flex;
   align-items: center;
@@ -60,6 +58,7 @@
   margin-bottom: 25px;
   width: 27rem;
 }
+
 input {
   flex: 1;
   border: none;
@@ -67,11 +66,13 @@ input {
   background: transparent;
   padding: 10px;
 }
+
 #input-box {
   font-size: 17px;
   font-weight: 543;
   color: black;
 }
+
 .list-add-button {
   border: none;
   outline: none;
@@ -83,9 +84,11 @@ input {
   border-radius: 40px;
   font-weight: 400;
 }
+
 .list-add-button:hover {
   background: rgb(223, 51, 32);
 }
+
 ul li {
   list-style: none;
   font-size: 18px;
@@ -96,6 +99,7 @@ ul li {
   color: #7a7f8a;
   font-weight: lighter;
 }
+
 ul li::before {
   content: "";
   position: absolute;
@@ -108,13 +112,16 @@ ul li::before {
   top: 17px;
   left: 8px;
 }
+
 ul li.checked {
   color: #555;
   text-decoration: line-through;
 }
+
 ul li.checked::before {
   background-image: url(images/checked.png);
 }
+
 ul li span {
   position: absolute;
   right: 0;
@@ -127,15 +134,18 @@ ul li span {
   text-align: center;
   border-radius: 50%;
 }
+
 ul li span:hover {
   background: #edeef0;
 }
+
 .dino-pic {
   width: 9rem;
   position: relative;
   left: 20rem;
   top: 0.5rem;
 }
+
 .search-bar {
   display: flex;
   /* background-color: rgb(187, 182, 182); */
@@ -148,10 +158,103 @@ ul li span:hover {
   border-radius: 2rem;
   border-bottom: 0.1rem solid rgb(175, 175, 175);
 }
+
 .search-bar input {
   border: none;
 }
+
 .search-color {
   color: grey;
-  /* font-family: "Poppins", sans-serif; */
+}
+
+/* 
+<============================================================>
+                  Responsive Media Queries 
+<============================================================>
+*/
+@media only screen and (max-width: 540px) {
+  .todo-app {
+    width: 90%;
+  }
+
+  .row {
+    width: 25rem;
+  }
+
+  .list-add-button {
+    padding: 16px 32px;
+  }
+
+  .dino-pic {
+    left: 15rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .todo-app {
+    width: 85%;
+  }
+
+  .row {
+    width: 20rem;
+  }
+
+  .dino-pic {
+    left: 12rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .todo-app {
+    width: 80%;
+  }
+
+  .row {
+    width: 19rem;
+  }
+
+  .list-add-button {
+    padding: 16px;
+  }
+
+
+  .dino-pic {
+    left: 10rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .row {
+    width: 17rem;
+  }
+
+  .list-add-button {
+    margin-left: -10px;
+    padding: 14px;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  .row {
+    width: 15rem;
+  }
+
+  .list-add-button {
+    margin-left: -40px;
+  }
+
+  .dino-pic {
+    left: 8rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .list-add-button {
+    margin-left: -100px;
+    padding: 14px;
+  }
+
+  .dino-pic {
+    left: 6rem;
+  }
 }
